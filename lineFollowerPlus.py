@@ -65,7 +65,7 @@ def Main():
         change = pidReg()
         Bottle()
         basespeed = 800
-        #Lmtr.run_at_speed(int(basespeed*(1 - change)))
-        #Rmtr.run_at_speed(int(basespeed*(1 + change)))
+        Lmtr.run_at_speed(int(basespeed*(1 - change)))
+        Rmtr.run_at_speed(int(basespeed*(1 + change)))
         time.sleep(0.001)
 Main()
